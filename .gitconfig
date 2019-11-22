@@ -1,0 +1,9 @@
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[user]
+	name = 40823113
+    email = 40823113@gm.nfu.edu.tw

@@ -9,20 +9,17 @@ int calculateRabbits(int years) {
 }
 
 */
-
-cimport "dart:html";
-pconst int GROWTH_FACTOR = 15;
-2
+import"dart:html";
 void main() {
   querySelector("#submit").onClick.listen((e) => calcRabbits());
 }
-0
+
 calcRabbits() {
- 1 // binding variables to html elements:
-  9InputElement cInput = querySelector("#c");
- a LabelElement output = querySelector("#output");
-  g// getting input
-  3String cString = cInput.value;
+ // binding variables to html elements:
+  InputElement cInput = querySelector("#c");
+  LabelElement output = querySelector("#output");
+  // getting input
+  String cString = cInput.value;
   int c = int.parse(cString);
   // calculating and setting output:
   output.innerHtml = "${calculateRabbits(c)}";
@@ -32,9 +29,7 @@ int calculateRabbits(int c) {
    return ((9/5)*c+32)
       .round()
       .toInt();
-}
-
-/*html
+}/*html
 After <input type="number" id="years" value="5" min="1" max="30"> Years
 <input type="button" id="submit" value="Calculate"/>
 <br/>Number of rabbits: <label id="output"></label>
